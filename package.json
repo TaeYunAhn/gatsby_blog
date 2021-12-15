@@ -1,22 +1,15 @@
 {
-  "name": "blog",
-  "version": "1.0.0",
   "private": true,
-  "description": "blog",
-  "author": "TaeYunAhn",
-  "keywords": [
-    "gatsby"
-  ],
+  "version": "2.0.1",
+  "main": "index.js",
+  "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "build": "yarn workspace site build",
+    "clean": "yarn workspace site clean",
+    "develop": "yarn workspace site develop"
   },
-  "dependencies": {
-    "gatsby": "^4.3.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1"
-  }
+  "workspaces": [
+    "gatsby-theme-intro",
+    "site"
+  ]
 }
